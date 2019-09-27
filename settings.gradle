@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name='BT04_ListView_NHOM_20'

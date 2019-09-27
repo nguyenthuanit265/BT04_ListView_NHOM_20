@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="4dp"
+        android:weightSum="20"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="20dp"
+
+       >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="10dp"
+           android:layout_weight="1">
+
+
+           <TextView
+               android:id="@+id/txtChoose"
+               android:layout_width="wrap_content"
+               android:layout_weight="1"
+               android:textSize="20sp"
+               android:textColor="#E91E63"
+               android:layout_height="wrap_content"
+               android:text="You choose: "/>
+           <TextView
+               android:id="@+id/txtInfor"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textSize="20sp"
+               android:textColor="#E91E63"
+               android:paddingLeft="5dp"
+               android:layout_weight="8"
+
+               android:textStyle="bold"
+               android:text="@null"
+               />
+
+
+
+
+       </LinearLayout>
+
+       <ListView
+           android:id="@+id/listViewInfor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="#050505"
+            android:dividerHeight="1dp"
+           android:listSelector="@android:color/holo_orange_light"
+
+           />
+
+   </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
